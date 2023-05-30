@@ -1,0 +1,33 @@
+media-video/pipewire sound-server
+# Provide sound server using ALSA and bluetooth devices
+
+media-sound/pulseaudio -daemon
+# -daemon: Only installs stuff for pipewire compatbility support
+
+media-sound/cmus opus
+# Enable Opus audio codec support
+
+media-video/ffmpeg vpx opus
+# vpx: Enables VP8 and VP9 codec support using libvpx
+# opus: Enable Opus audio codec support
+
+sys-libs/zlib minizip
+# Include the minizip library for quick and dirty zip extraction
+
+dev-qt/qtgui jpeg
+# Add JPEG image support
+
+dev-qt/qtcore icu
+# Enable ICU (Internationalization Components for Unicode) support
+
+app-text/xmlto text
+# Build text (TrueType font) functions
+
+sys-devel/llvm zstd
+# Enable support for ZSTD compression 
+
+app-text/poppler qt5
+# Add support for the Qt 5 application and UI framework
+
+media-libs/libsdl2 opengl
+# Add support for OpenGL (3D graphics)
